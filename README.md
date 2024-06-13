@@ -1,1 +1,9 @@
 # rl_as1
+## Part 1
+Find best performance among greedy with non-optimistic initial values, epsilon-greedy with different choices of epsilon, optimistic starting values with a greedy approach and gradient bandit algorithm by repeating this for a total of 1000 different bandit problems (i.e., 1000 sets of ten mean parameters) and report (1) the average reward acquired by the algorithm at each time step (except for the gradient bandit algorithm) at each time step and (2) the percentage of time the optimal action is taken by the algorithm, again, at each time step.
+![image](https://github.com/chencc23/rl_as1/assets/165184429/6096e955-efe5-4023-8c14-a9d38dba9581)
+## Part 2
+Consider non-stationary modifications of the problem above,  compare the (1) optimistic greedy method, (2) ϵ-greedy with a fixed step size (3) ϵ-greedy with a decreasing step-size. Comparing methods on non-stationary problems requires different metrics to be used. Since we cannot compare the peformance at a point in time (due to non-stationarity of the rewards distributions) we will look at the distribution of the rewards attained after some large number of steps (say, 10, 000 or 20, 000). You should therefore run the algorithm on 1, 000 repetitions of the non-stationary problem (use the same starting means but a different seed for each run) and report the distribution of the average reward attained at the terminal step over the 1, 000 repetitions. The algorithm which produces the most favourable distribution of rewards at the terminal step is then a preferable one. Use box plots to present the terminal reward distributions.
+![image](https://github.com/chencc23/rl_as1/assets/165184429/4519c304-ddf6-4240-ac67-f351979ba620)
+![image](https://github.com/chencc23/rl_as1/assets/165184429/0dea9cd1-a501-42d5-9f7b-bb7260c546fc)
+![image](https://github.com/chencc23/rl_as1/assets/165184429/c6e6c5b1-e85c-4f15-b7a3-0f23835af4bb)
